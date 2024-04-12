@@ -1,21 +1,119 @@
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*  App                                                  */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-:root {
-  --background-dark: rgb(24, 23, 31);
-}
-
-body {
-  background-color: var(--background-dark);
-}
-
-.container {
-  width: min(100% - 30px, 1080px);
-  margin-inline: auto;
-}
-
+@import "./base.css";
 
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /*  Component                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+header, footer {
+  height: 100px;
+}
+
+main {
+  height: calc(100svh - 100px - 100px);
+}
+
+.welcome {
+  height: 100%;
+}
+
+.welcome-img {
+  height: 100%;
+  width: 50%;
+  background: #fff url('../img/welcome-img.jpg') center / cover no-repeat;
+}
+
+.welcome-img h2 {
+  padding: 100px 30px;
+}
+
+h2 {
+  padding-bottom: 30px;
+  font-size: 35px;
+}
+
+.welcome-msg {
+  font-size: 18px;
+  padding-bottom: 30px;
+  color: #a6a6a6;
+}
+
+.incorrect-none {
+  visibility: hidden;
+}
+
+.incorrect-details {
+  height: 60px;
+  width: 100%;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  background-color: rgb(255 77 77 / 0.3);
+  color: #f66;
+}
+
+.login {
+  width: 42%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  height: 60px;
+  font-size: 18px;
+}
+
+input[type="email"], input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 0 20px 0 64px;
+  border: 1px solid rgb(0 0 0 / 0.03);
+}
+
+input[type=email]:focus, input[type="password"]:focus {
+  border: 1px solid rgb(0 0 0 / 0.08);
+}
+
+input[type="email"] {
+  background: rgb(255 255 255 / 0.05) url('../img/email.png') no-repeat 16px 16px;
+  background-size: 22px;
+}
+
+input[type="password"] {
+  background: rgb(255 255 255 / 0.05) url('../img/key.png') no-repeat 16px 20px;
+  background-size: 18px;
+}
+
+input[type="button"] {
+  width: 44%;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 200px;
+}
+
+.login-button {
+  margin-right: 30px;
+  background-color: var(--app-blue);
+  color: var(--app-white);
+}
+
+.login-button:hover {
+  background-color: var(--app-blue-hover);
+}
+
+.sign-up-button {
+  background-color: var(--app-white);
+  color: var(--app-blue);
+  border: 1px solid var(--app-blue);
+}
+
+.sign-up-button:hover {
+  background-color: rgb(43 88 222 / 0.03);
+}
+
+.forgot {
+  display: block;
+  color: #a6a6a6;
+  padding: 15px 0 45px;
+}

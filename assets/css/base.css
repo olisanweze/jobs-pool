@@ -1,0 +1,97 @@
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*  App                                                  */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+:root {
+  --background-dark: rgb(24, 23, 31);
+  --background-grey: rgb(255 255 255 / 0.8);
+  --app-black: rgb(24, 23, 31);
+  --app-grey: #a6a6a6;
+  --app-grey-dark: #757575;
+  --background-strong-dark-grey: #333333;
+  --app-blue: #0095ff;
+  --app-blue-hover: #0077cc;
+  --app-white: #fff;
+}
+
+body {
+  background-color: var(--background-grey);
+}
+
+.container {
+  width: min(100% - 40px, 1200px);
+  margin-inline: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.grid {
+  display: grid;
+}
+
+.center {
+  place-items: center;
+}
+
+.justify-c {
+  justify-content: center;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.gap-40 {
+  gap: 40px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+h1, h2, h3, h4, h5, p, span, li, label, .button, input, textarea {
+  font-family: 'Poppins', sans-serif;
+}
+
+.blue {
+  color: var(--app-blue);
+}
+
+.grey {
+  color: var(--app-grey);
+}
+
+.grey-dark {
+  color: var(--app-grey-dark);
+}
+
+nav ul li {
+  cursor: default;
+  list-style: none;
+}
+
+nav ul li a {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.25s ease-in-out;
+  color: var(--app-grey);
+}
+
+nav ul li:hover a,
+nav ul li:hover a + i,
+nav ul li:hover i,
+nav ul li:hover i + a {
+  color: var(--app-blue);
+}

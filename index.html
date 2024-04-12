@@ -17,10 +17,41 @@
     <script src="./assets/js/app.js" type="module"></script>
   </head>
   <body>
+    <header></header>
     <main>
-      <div class="container">
-
+      <div class="container flex welcome space-between">
+        <section class="welcome-img">
+          <h2>JobsPool</h2>
+        </section>
+        <div class="grid center login">
+          <section>
+            <h2>Welcome to <span class="blue">JobsPool</span></h2>
+            <p class="welcome-msg">
+              Jump into the deep end of job opportunities with JobsPool! 
+              Your next career adventure starts here.
+            </p>
+            <div class="incorrect-details flex center">
+              <p>Incorrect username or password</p>
+            </div>
+            <form>
+              <input type="email" class="user-email" 
+              placeholder="Email or Phone" maxlength="40">
+              <input type="password" class="user-password" 
+              placeholder="Password" maxlength="40">
+              <a href="#" class="forgot">Forgot password?</a>
+              <input type="button" value="Login" class="login-button">
+              <input type="button" value="Sign up" class="sign-up-button">
+            </form>
+            <ul class="flex gap-15">
+              <li>Or login with</li>
+              <li><a href="#" class="blue">Facebook</a></li>
+              <li><a href="#" class="blue">Google</a></li>
+              <li><a href="#" class="blue">Twitter</a></li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
+    <footer></footer>
   </body>
 </html>
