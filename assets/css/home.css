@@ -1,12 +1,11 @@
 @import "./base.css";
 
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/*  Component                                            */
-/* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/*=======================================================*/
+/*  header                                               */
+/*=======================================================*/
 
 body {
   background-color: rgb(0 0 0 / 0.025);
-  height: 100dvh;
 }
 
 header {
@@ -44,9 +43,13 @@ nav ul li i {
   cursor: pointer;
 }
 
+/*=======================================================*/
+/*  main                                                 */
+/*=======================================================*/
+
 main {
   margin-top: 40px;
-  height: calc(100svh - 100px - 80px - 40px);
+  height: calc(100svh - 260px);
 }
 
 aside {
@@ -62,7 +65,7 @@ aside {
   text-align: center;
 }
 
-.profile-img, .profile-img-aside {
+.profile-img-user-main, .profile-img-aside {
   background: #fff url('../img/profile-pic.jpg') center / cover no-repeat;
 }
 
@@ -93,7 +96,7 @@ aside {
 }
 
 .profile-stats {
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .stats {
@@ -115,7 +118,7 @@ aside {
 .premium {
   background-color: var(--app-white);
   justify-content: center;
-  margin-top: 4px;
+  margin-top: 5px;
 }
 
 .premium-ad {
@@ -134,7 +137,7 @@ aside {
   margin-bottom: 30px;
 }
 
-h3 {
+.user-profile-name {
   padding-top: 25px;
   font-size: 21px;
 }
@@ -258,8 +261,30 @@ h5 {
   padding-bottom: 30px;
 }
 
+.people-section > div {
+  background-color: var(--app-white);
+  margin-bottom: 5px;
+  padding: 20px;
+}
+
+.profile-img-people {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.people-suggestions-city {
+  font-size: 12px;
+}
+
+/*=======================================================*/
+/*  footer                                               */
+/*=======================================================*/
 
 footer {
+  margin-top: 40px;
   height: 80px;
   background-color: var(--background-strong-dark-grey);
   color: var(--app-white);
