@@ -86,7 +86,7 @@ function buildOtherUsers(users) {
 
     const img = create ('div');
     img.classList.add('profile-img-people');
-    img.style.background = `#fff url(${user.profilePicture}) center / cover no-repeat`
+    img.style.background = `#fff url(${user.profilePicture}) center / cover no-repeat`;
     userDiv.appendChild(img);
 
     const userDetails = create('div');
