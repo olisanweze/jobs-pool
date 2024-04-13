@@ -218,6 +218,24 @@ input[type="button"]:hover {
   margin: 0 15px 15px 0;
 }
 
+.engagement {
+  padding: 10px 0 0;
+}
+
+.engagement p {
+  font-size: 14px;
+  padding: 0 15px 0 4px;
+  color: var(--app-grey-dark);
+}
+
+.fa-heart {
+  color: #f00;
+}
+
+.fa-comment, .fa-share-nodes {
+  color: var(--app-grey);
+}
+
 .ph-img-one {
   background: #fff url('../img/profile-ph-one.jpg') center / cover no-repeat;
 }
