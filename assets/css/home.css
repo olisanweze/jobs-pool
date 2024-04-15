@@ -228,12 +228,16 @@ input[type="button"]:hover {
   color: var(--app-grey-dark);
 }
 
-.fa-heart {
+.fa-heart, .fa-comment, .fa-share-nodes {
+  color: var(--app-grey);
+}
+
+.fa-heart:hover {
   color: #f00;
 }
 
-.fa-comment, .fa-share-nodes {
-  color: var(--app-grey);
+.fa-comment:hover {
+  color: var(--app-blue-hover);
 }
 
 .fa-heart, .fa-comment, .fa-share-nodes {
