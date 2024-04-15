@@ -236,6 +236,10 @@ input[type="button"]:hover {
   color: var(--app-grey);
 }
 
+.fa-heart, .fa-comment, .fa-share-nodes {
+  cursor: pointer;
+}
+
 .ph-img-one {
   background: #fff url('../img/profile-ph-one.jpg') center / cover no-repeat;
 }

@@ -4,13 +4,9 @@
 /*  Component                                            */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-header, footer {
-  height: 100px;
-}
-
 main {
   background-color: var(--background-grey);
-  height: calc(100svh - 100px - 100px);
+  height: 100svh;
 }
 
 .welcome {
@@ -28,12 +24,12 @@ main {
 }
 
 h2 {
-  padding-bottom: 30px;
-  font-size: 35px;
+  padding-bottom: 20px;
+  font-size: 45px;
 }
 
 .welcome-msg {
-  font-size: 18px;
+  font-size: 20px;
   padding-bottom: 30px;
   color: #a6a6a6;
 }
@@ -41,7 +37,7 @@ h2 {
 .incorrect-details {
   visibility: hidden;
   height: 60px;
-  width: 100%;
+  width: 70%;
   padding-left: 20px;
   margin-bottom: 8px;
   background-color: rgb(255 77 77 / 0.3);
@@ -49,7 +45,7 @@ h2 {
 }
 
 .login {
-  width: 42%;
+  width: 46%;
 }
 
 a {
@@ -58,13 +54,13 @@ a {
 
 input {
   height: 60px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 input[type="email"], input[type="password"] {
   color: var(--background-strong-dark-grey);
   display: block;
-  width: 100%;
+  width: 70%;
   padding: 0 20px 0 64px;
   border: 1px solid rgb(0 0 0 / 0.03);
 }
@@ -84,11 +80,11 @@ input[type="password"] {
 }
 
 input[type="button"] {
-  width: 44%;
+  width: 33%;
   border-radius: 8px;
   font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 200px;
+  font-size: 20px;
+  margin-bottom: 100px;
 }
 
 .login-button {
