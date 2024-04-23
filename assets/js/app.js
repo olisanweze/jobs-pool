@@ -83,11 +83,16 @@ function buildOtherUsers(users) {
   users.forEach(user => {
     const userDiv = create('div');
     userDiv.classList.add('flex');
+    userDiv.classList.add('space-between');
+    userDiv.classList.add('center');
+    
+    const about = create('div');
+    about.classList.add('flex');
 
     const img = create ('div');
     img.classList.add('profile-img-people');
     img.style.background = `#fff url(${user.profilePicture}) center / cover no-repeat`;
-    userDiv.appendChild(img);
+    about.appendChild(img);
 
     const userDetails = create('div');
     const name = create('h5');
@@ -99,8 +104,13 @@ function buildOtherUsers(users) {
     city.classList.add('grey');
     city.textContent = user.city;
     userDetails.appendChild(city);
-    userDiv.appendChild(userDetails);
+    about.appendChild(userDetails);
     peopleSuggestions.appendChild(userDiv);
+
+    const add = create('div');
+    add.innerHTML = '<i class="fa-solid fa-plus"></i>';
+    userDiv.appendChild(about);
+    userDiv.appendChild(add);
   })
 }
 

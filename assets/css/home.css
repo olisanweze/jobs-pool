@@ -130,10 +130,15 @@ aside {
 .premium-button {
   height: 44px;
   width: 74%;
-  color: var(--app-blue-hover);
-  border-radius: 20px;
+  background-color: var(--app-blue);
+  color: var(--app-white);
+  border-radius: 7px;
   font-weight: 600;
   margin-bottom: 30px;
+}
+
+.premium-button:hover {
+  background-color: var(--app-blue-hover);
 }
 
 .user-profile-name {
@@ -189,7 +194,7 @@ textarea {
 }
 
 input[type="button"] {
-  border-radius: 5px;
+  border-radius: 7px;
   height: 44px;
   line-height: 44px;
   font-size: 15px;
@@ -302,6 +307,13 @@ h5 {
 
 .people-suggestions-city {
   font-size: 12px;
+}
+
+.fa-plus {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--app-blue);
+  cursor: pointer;
 }
 
 /*=======================================================*/
